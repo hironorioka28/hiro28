@@ -22,11 +22,6 @@ module.exports = {
   loading: { color: '#fff' },
 
   /*
-  ** Global CSS
-  */
-  css: [],
-
-  /*
   ** Plugins to load before mounting the App
   */
   plugins: [],
@@ -36,8 +31,17 @@ module.exports = {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/style-resources'
   ],
+
+  styleResources: {
+    scss: [
+      '@/assets/scss/color.scss',
+      '@/assets/scss/mixins.scss'
+    ]
+  },
+
   /*
   ** Axios module configuration
   */
@@ -63,5 +67,14 @@ module.exports = {
         })
       }
     }
-  }
+  },
+
+  /*
+  ** Global CSS
+  */
+  css: [
+    '@/assets/scss/vendor/reset.scss',
+    '@/assets/scss/general.scss'
+  ]
+
 }

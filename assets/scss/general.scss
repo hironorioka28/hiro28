@@ -1,0 +1,41 @@
+html {
+  font: {
+    size: 62.5%;
+  }
+}
+
+body {
+  word-wrap: break-word;
+  font: {
+    family: "Helvetica Neue", "Hiragino Kaku Gothic ProN", sans-serif;
+    size: 1.4rem;
+    weight: normal;
+  }
+  letter-spacing: 0.1em;
+  line-height: 2;
+  color: $black-m;
+  -webkit-font-smoothing: antialiased;
+  -mox-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: $black-l;
+  font: {
+    weight: bold;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  background-color: $white-l;
+  border: 1px solid $gray-m;
+  outline-color: $gray-l;
+}
+
+img {
+  vertical-align: text-bottom;
+}
