@@ -1,11 +1,17 @@
 <template>
   <section class="wrapper">
-    <h1>Hello hiro28</h1>
+    <TopHeader />
   </section>
 </template>
 
 <script>
-export default {}
+import TopHeader from '@/components/modules/TopHeader'
+
+export default {
+  components: {
+    TopHeader
+  }
+}
 </script>
 
 <style>
