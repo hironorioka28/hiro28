@@ -1,5 +1,8 @@
 <template lang="html">
   <header class="topHeader">
+    <div class="topHeader_bg">
+      <HeaderBg />
+    </div>
     <div class="topHeader_main">
       <div class="topHeader_logo">
         <Logo />
@@ -10,11 +13,6 @@
     </div>
     <div class="topHeader_today">
       <Today />
-    </div>
-    <div class="topHeader_bg">
-      <HeaderBg
-        img-url="IMG_2482.jpg"
-      />
     </div>
   </header>
 </template>
@@ -37,10 +35,13 @@ export default {
 
 <style lang="scss" scoped>
 .topHeader {
-  height: calc(100vh - 32px * 2);
   padding: 32px;
+  height: calc(100vh - 32px * 2);
   background-color: $white-l;
   position: relative;
+  @include mq() {
+    height: calc(500px - 32px * 2);
+  }
   &_main {
     display: flex;
     align-items: flex-end;
@@ -68,12 +69,13 @@ export default {
     }
   }
   &_bg {
-    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
     top: 0;
-    right: -100vw;
+    left: 0;
     @include mq() {
-      right: unset;
-      left: -20vw;
+      height: 500px;
     }
   }
   &_today {
