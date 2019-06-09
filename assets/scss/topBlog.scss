@@ -1,0 +1,18 @@
+.topBlog {
+  &_title {
+    margin-bottom: 20px;
+    font: {
+      size: 2rem;
+      weight: bold;
+    }
+    line-height: 1.5;
+  }
+  &_date {
+    margin-bottom: 20px;
+    font: {
+      size: 1.2rem;
+      weight: 400;
+    }
+    line-height: 1;
+  }
+}

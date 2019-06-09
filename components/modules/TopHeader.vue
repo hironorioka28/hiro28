@@ -8,7 +8,7 @@
         <Logo />
       </div>
       <div class="topHeader_list">
-        <HeaderList />
+        <MenuList />
       </div>
     </div>
     <div class="topHeader_today">
@@ -19,14 +19,14 @@
 
 <script>
 import Logo from '@/components/elements/Logo'
-import HeaderList from '@/components/elements/HeaderList'
+import MenuList from '@/components/elements/MenuList'
 import HeaderBg from '@/components/elements/HeaderBg'
 import Today from '@/components/elements/Today'
 
 export default {
   components: {
     Logo,
-    HeaderList,
+    MenuList,
     HeaderBg,
     Today
   }

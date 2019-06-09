@@ -1,0 +1,10 @@
+.topPhoto {
+  margin: 0 -32px;
+  display: block;
+  &_img {
+    width: 100vw;
+    height: calc(100vw * 0.618);
+    object-fit: cover;
+    border-radius: 50vw / 5vw;
+  }
+}

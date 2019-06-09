@@ -1,0 +1,21 @@
+.worksList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 16px;
+  &_item {
+    padding-top: 100%;
+    position: relative;
+  }
+  &_link {
+    display: block;
+    background-color: $gray-l;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10vw 15vw 10vw 15vw / 2vw 10vw 2vw 10vw;
+  }
+}
