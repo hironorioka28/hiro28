@@ -1,11 +1,9 @@
 .worksList {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  column-gap: 16px;
-  row-gap: 16px;
   &_item {
-    padding-top: 100%;
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+    padding-top: 61.8%;
     position: relative;
   }
   &_link {
@@ -16,6 +14,6 @@
     right: 0;
     bottom: 0;
     left: 0;
-    border-radius: 10vw 15vw 10vw 15vw / 2vw 10vw 2vw 10vw;
+    border-radius: calc(50vw - 32px) / 5vw;
   }
 }
