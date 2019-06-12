@@ -56,26 +56,10 @@
               dummy
             </nuxt-link>
           </li>
-          <li class="worksList_item">
-            <nuxt-link
-              class="worksList_link"
-              to="/"
-            >
-              dummy
-            </nuxt-link>
-          </li>
-          <li class="worksList_item">
-            <nuxt-link
-              class="worksList_link"
-              to="/"
-            >
-              dummy
-            </nuxt-link>
-          </li>
         </ul>
       </TopModule>
     </section>
-    <section class="page_section">
+    <section class="page_section _fullWidth">
       <TopModule
         title-modifier="LATEST"
         title="PHOTO"
@@ -94,7 +78,7 @@
         </nuxt-link>
       </TopModule>
     </section>
-    <section class="page_section">
+    <section class="page_section _fullWidth">
       <TopModule
         title="ABOUT"
       >
@@ -139,8 +123,27 @@ export default {
 @import '@/assets/scss/about.scss';
 
 .page {
+  &_wrapper {
+    @include mq(1000) {
+      display: grid;
+      grid-template-columns: repeat(2, 400px);
+      column-gap: 200px;
+      row-gap: 100px;
+      justify-content: center;
+    }
+  }
+  &_header {
+    @include mq(1000) {
+      grid-column: 1 / 3;
+    }
+  }
   &_section {
     padding: 40px 32px;
+    &._fullWidth {
+      @include mq(1000) {
+        grid-column: 1 / 3;
+      }
+    }
   }
 }
 </style>

@@ -77,6 +77,9 @@ export default {
     @include mq() {
       height: 500px;
     }
+    @include mq(1000) {
+      left: calc(-1 * (100vw - 1000px) / 2);
+    }
   }
   &_today {
     position: absolute;
@@ -85,6 +88,9 @@ export default {
     mix-blend-mode: exclusion;
     z-index: 1;
     color: $white-l;
+    @include mq() {
+      bottom: 42px;
+    }
   }
 }
 </style>

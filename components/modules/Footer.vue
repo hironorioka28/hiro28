@@ -36,6 +36,11 @@ export default {
   padding: 72px 32px 32px 32px;
   position: relative;
   overflow: hidden;
+  @include mq(1000) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   &::after {
     background-color: $black-m;
     border-radius: 0 150vw 0 0 / 0 470px 0 0;
@@ -48,9 +53,19 @@ export default {
     left: 0;
     z-index: -1;
   }
+  &_menu,
+  &_sns,
+  &_copy {
+    @include mq(1000) {
+      width: 1000px - 64px;
+    }
+  }
   &_logo {
     margin-bottom: 40px;
     width: 86px;
+    @include mq(1000) {
+      margin-right: 1000px - 64px - 86px;
+    }
   }
   &_menu {
     margin-bottom: 40px;
