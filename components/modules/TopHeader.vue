@@ -75,7 +75,7 @@ export default {
     top: 0;
     left: 0;
     @include mq() {
-      height: 500px;
+      height: 600px;
     }
     @include mq(1000) {
       left: calc(-1 * (100vw - 1000px) / 2);

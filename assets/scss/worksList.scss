@@ -28,6 +28,6 @@
     right: 0;
     bottom: 0;
     left: 0;
-    border-radius: calc(50vw - 32px) / 5vw;
+    border-radius: 0 0 calc(100vw - 32px) 0 / 0 0 calc(100vw * 0.618) 0;
   }
 }
